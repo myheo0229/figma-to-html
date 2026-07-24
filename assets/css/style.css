@@ -22,6 +22,15 @@ a {
   text-decoration: none;
 }
 
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -41,7 +50,7 @@ a {
 
 .main-content {
   width: 1170px;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -90,7 +99,7 @@ a {
   display: block;
   content: "";
   width: 12px;
-  height: 2px;  
+  height: 2px;
   border-radius: 1px;
   background: #171100;
 }
@@ -248,7 +257,7 @@ a {
   margin-top: 48px;
 }
 
-.hero .stats{
+.hero .stats {
   margin-top: 8px;
 }
 
@@ -261,6 +270,47 @@ a {
   margin-right: 15px;
 }
 
-.hero .stats strong:nth-child(2){
+.hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* ===================popular=============== */
+.popular {
+  padding: 65px 0;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+
+.popular-top .control{
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.popular-top .control-btn:hover{
+  background-color: var(--primary-color);
+  color: white;
 }
